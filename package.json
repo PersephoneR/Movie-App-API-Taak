@@ -1,0 +1,28 @@
+{
+  "name": "webmap2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "parcel index.html --open",
+    "dev-clean": "rm -rf ./dist && rm -rf .cache && parcel index.html --open",
+    "build": "parcel build index.html --out-dir build",
+    "build-clean": "rm -rf ./build && parcel build index.html --out-dir build",
+    "test-build": "live-server ./build",
+    "deploy": "surge ./build Scooby-doobie-shaggy-moon-API-TAAK.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.1.2",
+    "sass": "^1.30.0",
+    "surge": "^0.21.6"
+  },
+  "description": ""
+}
